@@ -60,9 +60,9 @@ function About() {
       </div>
 
       {/* Cards Container */}
-      <div id="cards-container" className="relative h-[400vh] bg-gray-100 dark:bg-gray-900">
+      <div id="cards-container" className="relative h-[100vh] bg-gray-100 dark:bg-gray-900">
         <div className="sticky top-0 h-screen flex flex-col items-center justify-center">
-          <div className="max-w-5xl mx-auto px-6 w-full">
+          <div className="max-w-5xl mx-20 px-6 w-full">
             <div className="rounded-t-[64px]  bg-gray-100 dark:bg-gray-900">
               <h2 className="text-5xl font-bold text-center text-gray-800 dark:text-gray-200 py-8 opacity-90">
                 Adalah
@@ -70,10 +70,10 @@ function About() {
             </div>
 
             {/* Bento Grid */}
-            <div className="grid grid-cols-4 grid-rows-3 gap-6 ">
+            <div className="grid grid-cols-4 grid-rows-6 gap-6 ">
               {/* Tentang Kami - Large card */}
               <div
-                className="col-span-2 row-span-3 relative rounded-3xl overflow-hidden group cursor-pointer"
+                className="col-span-2 row-span-5 relative rounded-3xl overflow-hidden group cursor-pointer"
                 style={{
                   backgroundImage: `url(${tentang})`,
                   backgroundSize: "cover",
@@ -133,7 +133,7 @@ function About() {
 
               {/* Latar Belakang */}
               <div
-                className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden group cursor-pointer"
+                className="col-span-2 row-span-3 relative rounded-3xl overflow-hidden group cursor-pointer"
                 style={{
                   backgroundImage: `url(${latarBelakang})`,
                   backgroundSize: "cover",
@@ -177,7 +177,7 @@ function About() {
 
               {/* Visi */}
               <div
-                className="col-span-1 row-span-1 relative rounded-3xl overflow-hidden group cursor-pointer"
+                className="col-span-1 row-span-2 relative rounded-3xl overflow-hidden group cursor-pointer"
                 style={{
                   backgroundImage: `url(${visi})`,
                   backgroundSize: "cover",
@@ -219,7 +219,7 @@ function About() {
 
               {/* Misi */}
               <div
-                className="col-span-1 row-span-1 relative rounded-3xl overflow-hidden group cursor-pointer"
+                className="col-span-1 row-span-2 relative rounded-3xl overflow-hidden group cursor-pointer"
                 style={{
                   ...getCardAnimation('misi', 3),
                   ...(visibleCards.includes('misi') ? getCardAnimation('misi', 3) : {})
